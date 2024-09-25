@@ -55,15 +55,15 @@ def preprocessing(input_data):
     elif input_data['Region'] == 'Northwest':
         df['Region_Northwest'] = 1
         df['Region_Southwest'] = 0
-        df['Region_Northeast'] = 0
+        df['Region_Southeast'] = 0
     elif input_data['Region'] == 'Southwest':
         df['Region_Northwest'] = 0
         df['Region_Southwest'] = 1
-        df['Region_Northeast'] = 0
-    elif input_data['Region'] == 'Northeast':
+        df['Region_Southeast'] = 0
+    elif input_data['Region'] == 'Southeast':
         df['Region_Northwest'] = 0
         df['Region_Southwest'] = 0
-        df['Region_Northeast'] = 1
+        df['Region_Southeast'] = 1
 
     if input_data['Insurance Plan'] == 'Bronze':
         df['Insurance_Plan'] = 1
